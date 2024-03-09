@@ -13,8 +13,7 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-
-rootProject.name = "Soft Music"
+rootProject.name = "SoftMusic"
 include ':app'
 include ':lib:extensions'
 include ':lib:icons_pack'

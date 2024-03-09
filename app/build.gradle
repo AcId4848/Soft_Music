@@ -4,14 +4,15 @@ plugins {
 
 android {
     namespace 'com.acisofts.softmusic'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.acisofts.softmusic"
-        minSdk 23
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
+        setProperty("org.gradle.jvmargs", "-Xmx4g")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

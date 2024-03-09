@@ -1,12 +1,13 @@
 package com.acisofts.softmusic;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.Adapter;
-
+import com.acisofts.softmusic.views.panels.RootNavigationBarPanel;
 import com.acisofts.softmusic.views.panels.RootSoftMediaPlayerPanel;
 import com.realgear.multislidinguppanel.MultiSlidingUpPanelLayout;
+import com.realgear.multislidinguppanel.MultiSlidingPanelAdapter;
 import com.realgear.multislidinguppanel.PanelStateListener;
 
 import java.util.ArrayList;
@@ -24,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         List<Class<?>> items = new ArrayList<>();
 
         items.add(RootSoftMediaPlayerPanel.class);
-        items.add(RootSoftMediaPlayerPanel.class);
+        items.add(RootNavigationBarPanel.class);
 
         panelLayout.setPanelStateListener(new PanelStateListener(panelLayout) {});
 
-        panelLayout.setAdapter(new Adapter(getBaseContext(), items));
+        panelLayout.setAdapter(new MultiSlidingPanelAdapter((AppCompatActivity) getBaseContext(), items));
     }
 }

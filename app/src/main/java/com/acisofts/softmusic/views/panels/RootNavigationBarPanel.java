@@ -20,7 +20,7 @@ public class RootNavigationBarPanel extends BasePanelView {
     @Override
     public void onCreateView() {
         this.setPanelState(MultiSlidingUpPanelLayout.COLLAPSED);
-        this.setSlideDirection(MultiSlidingUpPanelLayout.SLIDE_VERTICAL)
+        this.setSlideDirection(MultiSlidingUpPanelLayout.SLIDE_VERTICAL);
 
         this.setPeakHeight(getResources().getDimensionPixelSize(R.dimen.navigation_bar_height));
     }
